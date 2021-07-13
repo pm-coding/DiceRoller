@@ -1,0 +1,24 @@
+{
+
+    "manifest_version": 2,
+    "name": "DiceRoller",
+    "version": "0.1",
+
+    "description": "Rolling Dice for DND.",
+    "homepage_url": "https://www.youtube.com/watch?v=e70PkoJhQYM",
+    "icons": {
+        "48": "icons/icon-48.png",
+        "96": "icons/icon-96.png"
+
+    },
+
+    "browser_action": {
+        "default_icon": "icons/icon-32.png",
+        "default_title": "DiceRoller",
+        "default_popup": "popup/dicepage.html"
+    },
+    "user_scripts": {
+        "api_script": "apiscript.js"
+    }
+
+}

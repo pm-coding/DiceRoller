@@ -1,0 +1,13 @@
+h2 {
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+}
+
+.mybutton {
+    color: black;
+    background-color: #c4b1b1;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+}
+
+.dice {
+    width: fit-content
+}
