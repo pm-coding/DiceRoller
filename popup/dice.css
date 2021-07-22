@@ -1,13 +1,22 @@
+html {
+    overflow: auto;
+}
+
 h2 {
     font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    text-align: center;
 }
 
 .mybutton {
     color: black;
     background-color: #c4b1b1;
     font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dice {
-    width: fit-content
+    width: fit-content;
+    height: fit-content;
 }
