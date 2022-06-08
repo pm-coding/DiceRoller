@@ -13,8 +13,9 @@ function randomize6sided() {
     var number = Math.floor((Math.random() * 6) + 1);
     var bonus = document.getElementById('bonus').value;
     document.getElementById('result').style.display = "block";
-    if (isNaN(Number.parseFloat(bonus))) {
-        document.getElementById('result').innerHTML = "The number on the dice is " + number + "! Either no bonus has been added, or what was typed in the text box was not a valid number.";
+	document.innerHeight = "300px";
+    if (isNaN(Number.parseFloat(bonus))|| Number.parseFloat(bonus) == 0) {
+        document.getElementById('result').innerHTML = "The number on the dice is " + number + "! No bonus has been added.";
     } else {
         var truebonus = Number.parseFloat(bonus);
         document.getElementById('result').innerHTML = "Your total roll is " + (number + truebonus) + "!";
@@ -49,8 +50,9 @@ function randomize8sided() {
     document.getElementById('result').innerHTML = "The number on the dice is " + number + "!";
     var bonus = document.getElementById('bonus').value;
     document.getElementById('result').style.display = "block";
-    if (isNaN(Number.parseFloat(bonus))) {
-        document.getElementById('result').innerHTML = "The number on the dice is " + number + "! Either no bonus has been added, or what was typed in the text box was not a valid number.";
+	document.innerHeight = "300px";
+    if (isNaN(Number.parseFloat(bonus))||Number.parseFloat(bonus) == 0) {
+        document.getElementById('result').innerHTML = "The number on the dice is " + number + "! No bonus has been added.";
     } else {
         var truebonus = Number.parseFloat(bonus);
         document.getElementById('result').innerHTML = "Your total roll is " + (number + truebonus) + "!";
@@ -83,15 +85,16 @@ function randomize8sided() {
                 break;
         }
     }
-
+ 
 }
 
 function randomize20sided() {
     var number = Math.floor((Math.random() * 20) + 1);
     var bonus = document.getElementById('bonus').value;
     document.getElementById('result').style.display = "block";
-    if (isNaN(Number.parseFloat(bonus))) {
-        document.getElementById('result').innerHTML = "The number on the dice is " + number + "! Either no bonus has been added, or what was typed in the text box was not a valid number.";
+	document.innerHeight = "300px";
+    if (isNaN(Number.parseFloat(bonus))||Number.parseFloat(bonus) == 0) {
+        document.getElementById('result').innerHTML = "The number on the dice is " + number + "! No bonus has been added.";
     } else {
         var truebonus = Number.parseFloat(bonus);
         document.getElementById('result').innerHTML = "Your total roll is " + (number + truebonus) + "!";
